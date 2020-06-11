@@ -1,5 +1,11 @@
 @import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600")
+@font-face {
+	font-family: 'Helvetica';
+	src: url('/assets/fonts/Zpix-beta-v3.0.2-beta.0.woff') format("woff"),
+		   url('/assets/fonts/Zpix-beta-v3.0.2-beta.0.ttf') format("truetype"),
+		   url('/assets/fonts/Helvetica.eot') format("embedded-opentype");
+  };
 
 /*
 	Dimension by HTML5 UP
