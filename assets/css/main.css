@@ -1,5 +1,4 @@
 @import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;700&display=swap"); /* 設定思源宋體 */
 /* 我加的設定 */
 
 	/* 改變反白的顏色 */
@@ -302,7 +301,8 @@ input, select, textarea {
 		}
 	body, input, select, textarea {
 		color: #ffffff;
-		font-family: "Noto Serif TC", sans-serif;
+		font-family: source-han-serif-tc, serif;
+		font-style: normal;
 		font-weight: 300;
 		font-size: 1rem;
 		line-height: 1.65;
@@ -604,7 +604,7 @@ input, select, textarea {
 		select option {
 			color: #ffffff;
 			background: #1b1f22;
-			font-family: "Noto Serif TC", sans-serif;
+			font-family: source-han-serif-tc, serif;
 		}
 
 		select:focus::-ms-value {
