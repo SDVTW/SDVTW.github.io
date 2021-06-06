@@ -10,20 +10,21 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="google-site-verification" content="xp6JmHWzZsrlGySGE2h6iXSoUMIcjrGk8d_LTeBZGEc" />
-		<meta name="description" content="《星露谷物語》正體中文模組">
-		<meta name="keywords" content="星露谷物語, 星露谷, 正體中文, 繁體中文, 繁中, 中文, 漢化, 遊戲, 翻譯, 模組, stardew vallry, sdv, game, translation, mods">
+		<meta name="description" content="《星露谷物語》正體中文模組發布網站">
+		<meta name="keywords" content="星露谷物語, 星露谷, 正體中文, 繁體中文, 繁中, 中文, 漢化, 遊戲, 翻譯, 模組, stardew vallry, sdv, game, translation, mods, traditional chinese, cht, zh-tw">
 		<!-- Open Graph -->
 		<meta property="og:url" content="https://sdvtw.github.io/"/>
 		<meta property="og:locale" content="zh_TW" />
 		<meta property="og:type" content="website" />
 		<meta property="og:title" content="《星露谷物語》正體中文模組" />
-		<meta property="og:description" content="《星露谷物語》正體中文模組"/>
+		<meta property="og:description" content="《星露谷物語》正體中文模組發布網站"/>
 		<meta property="og:image" content="https://raw.githubusercontent.com/sdvtw/sdvtw.github.io/master/images/welcome.png" />
-		<meta property="og:image:alt" content="《星露谷物語》正體中文模組" />
+		<meta property="og:image:alt" content="《星露谷物語》正體中文模組發布網站" />
 		<meta property="og:image:type" content="image/png" />
 		<link rel="shortcut icon" href="images/Icon.ico" type="image/x-icon" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!-- Adobe Fonts -->
 		<script>
 			(function(d) {
 			  var config = {
@@ -50,7 +51,7 @@
 						<div class="content">
 							<div class="inner">
 								<h1>《星露谷物語》正體中文模組</h1>
-								<p>模組版本：<a href="#update">0.9.1</a>  </p>
+								<p>模組版本：<a href="#update">0.9.2</a>  </p>
 							</div>
 						</div>
 						<nav>
@@ -227,7 +228,7 @@
 											<tr class="center">
 												<td>PC</td>
 												<td>1.5.4</td>
-												<td>0.9.1</td>
+												<td>0.9.2</td>
 											</tr>
 											<!-- <tr>
 												<td>Android</td>
@@ -279,8 +280,8 @@
 												<td style="vertical-align: top;">
 													<ul>	
 														<li>須安裝 SMAPI 模組載入器</li>
-														<li ><a href="#EOL">部分換行顯示不正確</li>
-														<li>可能會與部分 CP 模組衝突</li>
+														<li ><a href="#EOL">部分換行顯示不正確</a></li>
+														<li><a href="#conflict">可能會與其他 CP 模組衝突</a></li>
 													</ul>
 												</td>
 											</tr>
@@ -291,7 +292,7 @@
 														<li>完整正體中文化</li>
 														<li>切換字型容易</li>
 														<li>模組更新提醒</li>
-														<li><a href="#conflict">極少模組衝突</a>（正體模組不會覆蓋掉其他模組）</li>
+														<li><span class="tooltip">極少模組衝突<sapn class="tooltiptext" style="margin-left: -3em; margin-right: -7em;">正體模組不會覆蓋掉其他模組</sapn></span></li>
 													</ul>
 												</td>
 												<td style="vertical-align: top;">
@@ -312,12 +313,12 @@
 										</tfoot>
 									</table>
 								</div>
-								<h3>下載</h3>
+								<h3>安裝</h3>
 								<ul class="actions">
-									<li><a href="https://dl.orangedox.com/dkL6V1" class="button icon brands fa-windows" target="_blank">覆蓋版</a></li>
+									<li><a href="#downloadlink" class="button icon brands fa-windows">覆蓋版</a></li>
 									<li><a href="#ContentPatcher" class="button icon solid fa-circle">CP 版</a></li>
 									<li><a href="#Mix" class="button icon solid fa-mortar-pestle">完全版</a></li>
-									<!--<li><a href="#android" class="button icon brands fa-android">Android</a></li>-->
+									<!-- <li><a href="#android" class="button icon brands fa-android">Android</a></li> -->
 								</ul>
 								<h3>其他</h3>
 								<ul class="actions">
@@ -353,7 +354,7 @@
 									<ol>
 										<li>安裝 <a href="https://smapi.io/" target="_blank">SMAPI</a></li>
 										<li>下載 <a href="https://www.nexusmods.com/stardewvalley/mods/1915" target="_blank">Content Patcher</a></li>
-										<li>下載 <a href="https://www.nexusmods.com/stardewvalley/mods/5098" target="_blank">Generic Mod Config Menu</a>（用於方便切換字型，非必要）</li>
+										<li>下載 <a href="https://www.nexusmods.com/stardewvalley/mods/5098" target="_blank">Generic Mod Config Menu</a>（用於快速設定，選用）</li>
 										<li>下載<a href="https://www.nexusmods.com/stardewvalley/mods/8007" target="_blank">正體中文模組</a></li>
 										<li>將檔案解壓縮之後放入 Mods 資料夾即可</li>
 									</ol>
@@ -362,7 +363,7 @@
 								<p>點擊遊戲主畫面左下角的齒輪，修改「Font」選項後重新啟動遊戲即可。（須安裝 Generic Mod Config Menu）<span class="image main"><img src="images/sample/changefont.jpg"></span></p>
 								
 								<h4>手動切換</h4>
-								<p>開啟模組資料夾內的 config.json，將「"Font": "SourceHanSans"」的「SourceHanSans」改為下列對應值即可。</p>
+								<p>開啟模組資料夾內的 config 設定檔，將「"Font": "SourceHanSans"」的「SourceHanSans」改為下列對應值即可。（config 設定檔須啟動遊戲才會建立）</p>
 								<table>
 									<thead>
 									</thead>
@@ -395,20 +396,23 @@
 							<article id="Mix">
 								<h2 class="major">完全版</h2>
 									<ol>
-										<li>安裝覆蓋版</li>
-										<li>安裝 CP 版</li>
-										<li>點擊遊戲主畫面左下角的齒輪，將「Movie-only」選項選取後重新啟動遊戲即可。（或開啟模組資料夾內的 config.json，將「"Movie-only": "false"」的「false」改為「true」）<span class="image main"><img src="images/sample/Movie-only.jpg"></span></li>
+										<li>安裝<a href="#downloadlink">覆蓋版</a></li>
+										<li>安裝 <a href="#ContentPatcher">CP 版</a></li>
+										<li>點擊遊戲主畫面左下角的齒輪，將「Movie-only」選項選取後重新啟動遊戲即可。（或開啟模組資料夾內的 config 設定檔，將「"Movie-only": "false"」的「false」改為「true」。config 設定檔須啟動遊戲才會建立。）<span class="image main"><img src="images/sample/Movie-only.jpg"></span></li>
 										<li>字型將套用 CP 版的設定，覆蓋版的字型不會生效</li>
 									</ol>
 								</table>
 							</article>
 						<!-- Android -->
-							<!--<article id="android">
+							<!-- <article id="android">
 								<h2 class="major">Android</h2>
+								<h3 style="color: red;">請注意：下載錯誤的版本將無法使用模組</h3>
 								<ol>
-									<li>安裝 <a href="https://github.com/ZaneYork/SMAPI-Android-Installer" target="_blank">SMAPI 安裝器</a>。</li>
-									<li>依照 APP 的說明安裝 SMAPI。</li>
-									<li>在「下載」頁面安裝正體中文模組以及字型。（還沒問，先寫起來放）</li>
+									<li>安裝 <a href="https://github.com/ZaneYork/SMAPI-Android-Installer/releases/" target="_blank">SMAPI 安裝器</a></li>
+									<li>依照說明安裝 SMAPI</li>
+									<li>下載 <a href="https://www.nexusmods.com/stardewvalley/mods/1915" target="_blank">Content Patcher</a> 1.19 版</li>
+									<li>下載 <a href="https://www.nexusmods.com/stardewvalley/mods/5098" target="_blank">Generic Mod Config Menu</a> 1.2.0 版（用於快速設定，選用）</li>
+									<li>下載<a href="https://www.nexusmods.com/stardewvalley/mods/8007" target="_blank">正體中文模組</a></li>
 									<li>執行遊戲。</li>
 								</ol>
 							</article> -->
@@ -416,30 +420,55 @@
 						<!-- Update -->
 							<article id="update">
 								<h2 class="major">更新日誌</h2>
+								<h3>0.9.2</h3>
+								<h6>2021/06/06</h6>
+								<ul>
+									<li>修正 SMAPI 3.10 無法載入模組的錯誤（可繼續使用舊版 SMAPI）</li>
+									<li>修正安裝程式會備份無關檔案的錯誤</li>
+									<li>修正無法使用 Vortex 安裝模組的錯誤</li>
+									<li>已知金庫收集包名稱顯示有誤，此錯誤為模組造成，會影響存檔，無法透過更新模組修正，敬請見諒</li>
+									<p></p>
+									<li>新增翻譯註解，見<a href=#list>更動詞彙表</a></li>
+								</ul>
+								<a class="button small icon solid fa-arrow-down">詳細列表</a>
+								<ul class="spoiler">
+									<li>修正物品「向日葵種子」錯誤敘述</li>
+									<li>修正蝸牛教授名稱顯示為英文的錯誤</li>
+									<hr />
+									<li>補上阿比蓋爾 14 心事件缺少的對話、選項及動作</li>
+									<li>補上<span class="tooltip">巫師事件<span class="tooltiptext" style="margin-left: -2em; margin-right: -2em;">交還魔法墨水</span></span>缺少的對話</li>
+									<hr />
+									<li>Dark Talisman 統一譯為「暗黑護符」（原為黑暗護身符、暗黑護身符）</li>
+									<li>Miss Penny 統一譯為「佩妮老師」（原為佩妮小姐、佩妮老師）</li>
+									<li>Shrine 統一譯為「神龕」（原為神殿、神廟、神社）</li>
+									<li>修飾語句及修正誤譯</li>
+								</ul>
+								<hr />
 								<h3>0.9.1</h3>
 								<h6>2021/02/15</h6>
-								<u1>
+								<ul>
 									<li>新增完全版</li>
 									<li>修復事件錯誤</li>
 									<li>「載入」改為「讀取」、「中式儲藏櫃」改回「碗櫃」</li>
-								</u1>
+								</ul>
 								<hr />
 								<h3>0.9</h3>
 								<h6>2021/02/10</h6>
-								<u1>
+								<ul>
 									<li>修改非臺灣用語</li>
 									<li>圖片重新繪製</li>
 									<li>統整翻譯，避免前後不一</li>
 									<li>重建字型，解決缺字問題</li>
 									<li>人名、物品名改為臺灣慣用譯名</li>
 									<li>各式各樣、大大小小的修正</li>
-								</u1>
+								</ul>
 							</article>
 
 						<!-- List -->
 							<article id="list">
 								<h2 class="major">更動詞彙表</h2>
 								<h3 style="color:red">※此列表包含遊戲中後期的物件，請斟酌觀看。※</h3>
+								<p>點擊英文或將游標移至英文上可檢視註解。</p>
 								<div class="table-wrapper">
 									<h3 class="center">角色 Character</h3>
 									<table>
@@ -460,13 +489,13 @@
 											</tr>
 											<tr>
 												<td class="center"><span class="image big"><img src="images/sdv/character/Bouncer.png" alt="Bouncer" loading="lazy" /></span></td>
-												<td>Bouncer</td>
+												<td><div class="tooltip">Bouncer<span class="tooltiptext">門衛這個詞比較少見，改為較通俗的保鑣</span></div></td>
 												<td>門衛</td>
 												<td>保鑣</td>
 											</tr>
 											<tr>
 												<td class="center"><span class="image big"><img src="images/sdv/character/Demetrius.png" alt="Demetrius" loading="lazy" /></span></td>
-												<td>Demetrius</td>
+												<td><div class="tooltip">Demetrius<span class="tooltiptext">翻譯參考「英文名字543」網站，很帥的名字，簡中的很長還不好念</span></td></div>
 												<td>德米特里厄斯</td>
 												<td>迪馬崔斯</td>
 											</tr>
@@ -484,13 +513,13 @@
 											</tr>
 											<tr>
 												<td class="center"><span class="image big"><img src="images/sdv/character/Henchman.png" alt="Henchman" loading="lazy" /></span></td>
-												<td>Henchman</td>
+												<td><div class="tooltip">Henchman<span class="tooltiptext">僕從是直譯，遊戲中有說這是哥布林，所以翻作哥布林手下</span></td></div>
 												<td>僕從</td>
 												<td>哥布林手下</td>
 											</tr>
 											<tr>
 												<td class="center"><span class="image big"><img src="images/sdv/character/Jas.png" alt="Jas" loading="lazy" /></span></td>
-												<td>Jas</td>
+												<td><div class="tooltip">Jas<span class="tooltiptext">賈斯不太像女生的名字</span></td></div>
 												<td>賈斯</td>
 												<td>潔絲</td>
 											</tr>
@@ -520,7 +549,7 @@
 											</tr>
 											<tr>
 												<td class="center"><span class="image big"><img src="images/sdv/character/Penny.png" alt="Penny" loading="lazy" /></span></td>
-												<td>Penny</td>
+												<td><div class="tooltip">Penny<span class="tooltiptext">Penny 的發音比較接近佩妮，簡中似乎有意將母女翻作同性（潘妮和潘姆）</span></td></div>
 												<td>潘妮</td>
 												<td>佩妮</td>
 											</tr>
@@ -532,13 +561,13 @@
 											</tr>
 											<tr>
 												<td class="center"><span class="image big"><img src="images/sdv/character/Sandy.png" alt="Sandy" loading="lazy" /></span></td>
-												<td>Sandy</td>
+												<td><div class="tooltip">Sandy<span class="tooltiptext">Sandy 有沙的含意，而 Sandy 的所在地也正是沙地</span></td></div>
 												<td>桑迪</td>
 												<td>沙蒂</td>
 											</tr>
 											<tr>
 												<td class="center"><span class="image big"><img src="images/sdv/character/Sebastian.png" alt="Sebastian" loading="lazy" /></span></td>
-												<td>Sebastian</td>
+												<td><div class="tooltip">Sebastian<span class="tooltiptext">Sebastian 的譯名非常多，選用較常見的賽巴斯汀</span></td></div>
 												<td>塞巴斯蒂安</td>
 												<td>賽巴斯汀</td>
 											</tr>
@@ -550,19 +579,19 @@
 											</tr>
 											<tr>
 												<td class="center"><span class="image big"><img src="images/sdv/character/The_Queen_Of_Sauce.png" alt="The Queen Of Sauce" loading="lazy" /></span></td>
-												<td>The Queen Of Sauce</td>
+												<td><div class="tooltip">The Queen Of Sauce<span class="tooltiptext">皇和王意思不同，Queen 通常翻作王后或女王，例如英國女王（Queen of the United Kingdom）</span></td></div>
 												<td>醬料女皇</td>
 												<td>醬料女王</td>
 											</tr>
 											<tr>
 												<td class="center"><span class="image big"><img src="images/sdv/character/Welwick.png" alt="Welwick" loading="lazy" /></span></td>
-												<td>Welwick</td>
+												<td><div class="tooltip">Welwick<span class="tooltiptext">Welwick 其實是女性，翻作維爾維克不太適合<br />臺灣有位已故知名女性算命師叫做薇薇安，翻作薇薇可算是一種致敬</span></td></div>
 												<td>維爾維克</td>
 												<td>薇薇可</td>
 											</tr>
 											<tr>
 												<td class="center"><span class="image big"><img src="images/sdv/character/Wizard.png" alt="Wizard" loading="lazy" /></span></td>
-												<td>Wizard</td>
+												<td><div class="tooltip">Wizard<span class="tooltiptext">Wizard 通常譯作巫師或男巫</span></td></div>
 												<td>法師</td>
 												<td>巫師</td>
 											</tr>
@@ -605,7 +634,7 @@
 											</tr>
 											<tr>
 												<td class="center"><span class="image small"><img src="images/sdv/plant&crop/Cave_Carrot.png" alt="Cave Carrot" loading="lazy" /></span></td>
-												<td>Cave Carrot</td>
+												<td><div class="tooltip">Cave Carrot<span class="tooltiptext">carrot 是胡蘿蔔，蘿蔔跟胡蘿蔔不同</span></td></div>
 												<td>山洞蘿蔔</td>
 												<td>洞穴胡蘿蔔</td>
 											</tr>
@@ -695,19 +724,19 @@
 											</tr>
 											<tr>
 												<td class="center"><span class="image small"><img src="images/sdv/plant&crop/Salmonberry.png" alt="Salmonberry" loading="lazy" /></span></td>
-												<td>Salmonberry</td>
+												<td><div class="tooltip">Salmonberry<span class="tooltiptext">常見譯名有紅花覆盆子、美洲大樹莓（美莓）、鮭魚莓（鮭莓）<br />星露谷的作者有刻意避開一些真實存在的人名或地名，加上行政院農委會的公告也翻譯成鮭莓，因此決定使用鮭莓<br />另外在 Google 搜尋，若排除星露谷，鮭莓的搜尋結果多於美洲大樹莓</span></td></div>
 												<td>美洲大樹莓</td>
 												<td>鮭莓</td>
 											</tr>
 											<tr>
 												<td class="center"><span class="image small"><img src="images/sdv/plant&crop/Seaweed.png" alt="Seaweed" loading="lazy" /></span></td>
-												<td>Seaweed</td>
+												<td><div class="tooltip">Seaweed<span class="tooltiptext">海草（seagrass）是開花植物，而海藻是藻類，兩個是完全不同的東西</span></td></div>
 												<td>海草</td>
 												<td>海藻</td>
 											</tr>
 											<tr>
 												<td class="center"><span class="image small"><img src="images/sdv/plant&crop/Snow_Yam.png" alt="Snow Yam" loading="lazy" /></span></td>
-												<td>Snow Yam</td>
+												<td><div class="tooltip">Snow Yam<span class="tooltiptext">Yam 是薯蕷屬植物，不一定是山藥，在美國，Yam 也可以指一部分番薯（Sweet potato）</span></td></div>
 												<td>雪山藥</td>
 												<td>雪薯</td>
 											</tr>
@@ -719,13 +748,13 @@
 											</tr>
 											<tr>
 												<td class="center"><span class="image small"><img src="images/sdv/plant&crop/Spring_Onion.png" alt="Spring Onion" loading="lazy" /></span></td>
-												<td>Spring Onion</td>
+												<td><div class="tooltip">Spring Onion<span class="tooltiptext">Spring Onion 是一種蔥，特徵是根部有鱗莖<br />蔥有很多品種，不過臺灣基本上都簡稱蔥或青蔥</span></td></div>
 												<td>大蔥</td>
 												<td>青蔥</td>
 											</tr>
 											<tr>
 												<td class="center"><span class="image small"><img src="images/sdv/plant&crop/Summer_Spangle.png" alt="Summer Spangle" loading="lazy" /></span></td>
-												<td>Summer Spangle</td>
+												<td><div class="tooltip">Summer Spangle<span class="tooltiptext">夏季亮片是直譯，老實說蠻難聽的，夏日閃閃是在某個網站看到的翻譯</span></td></div>
 												<td>夏季亮片</td>
 												<td>夏日閃閃</td>
 											</tr>
@@ -749,7 +778,7 @@
 											</tr>
 											<tr>
 												<td class="center"><span class="image small"><img src="images/sdv/plant&crop/Wild_Horseradish.png" alt="Wild Horseradish" loading="lazy" /></span></td>
-												<td>Wild Horseradish</td>
+												<td><div class="tooltip">Wild Horseradish<span class="tooltiptext">Horseradish 就是辣根，山葵是 Wasabi 或 Japanese horseradish</span></td></div>
 												<td>野山葵</td>
 												<td>野辣根</td>
 											</tr>
@@ -792,13 +821,13 @@
 											</tr>
 											<tr>
 												<td class="center"><span class="image small"><img src="images/sdv/seafood/Bullhead.png" alt="Bullhead" loading="lazy" /></span></td>
-												<td>Bullhead</td>
+												<td><div class="tooltip">Bullhead<span class="tooltiptext">Bullhead 是鯰魚的近親，有些翻譯成「牛頭鯰」</span></td></div>
 												<td>大頭魚</td>
 												<td>鮰魚</td>
 											</tr>
 											<tr>
 												<td class="center"><span class="image small"><img src="images/sdv/seafood/Clam.png" alt="Clam" loading="lazy" /></span></td>
-												<td>Clam</td>
+												<td><div class="tooltip">Clam<span class="tooltiptext">Clam 就是蛤蜊，是這類動物的總稱<br />遊戲中畫成扇貝可能是作者的喜好，不過臺灣不會把扇貝說成是蛤蜊，所以依照圖示翻成扇貝<span class='chide'>哩洗勒蛤三小啦糙林呆</span></span></td></div>
 												<td>蛤</td>
 												<td>扇貝</td>
 											</tr>
@@ -828,7 +857,7 @@
 											</tr>
 											<tr>
 												<td class="center"><span class="image small"><img src="images/sdv/seafood/Mussel.png" alt="Mussel" loading="lazy" /></span></td>
-												<td>Mussel</td>
+												<td><div class="tooltip">Mussel<span class="tooltiptext">正式名稱是貽貝，又稱殼菜，臺灣常見的孔雀蛤是一種貽貝，淡菜是俗稱</span></td></div>
 												<td>蚌</td>
 												<td>淡菜</td>
 											</tr>
@@ -1070,7 +1099,7 @@
 											</tr>
 											<tr>
 												<td class="center"><span class="image small"><img src="images/sdv/cooking/Magic_Rock_Candy.png" alt="Magic Rock Candy" loading="lazy" /></span></td>
-												<td>Magic Rock Candy</td>
+												<td><div class="tooltip">Magic Rock Candy<span class="tooltiptext">Rock Candy 是冰糖</span></td></div>
 												<td>魔法糖冰棍</td>
 												<td>魔法冰糖棒</td>
 											</tr>
@@ -1088,7 +1117,7 @@
 											</tr>
 											<tr>
 												<td class="center"><span class="image small"><img src="images/sdv/cooking/Miner's_Treat.png" alt="Miner's Treat" loading="lazy" /></span></td>
-												<td>Miner's Treat</td>
+												<td><div class="tooltip">Miner's Treat<span class="tooltiptext">Miner 與 minor 諧音，minor 可指未成年人</span></td></div>
 												<td>礦工特供</td>
 												<td>礦礦糖</td>
 											</tr>
@@ -1106,7 +1135,7 @@
 											</tr>
 											<tr>
 												<td class="center"><span class="image small"><img src="images/sdv/cooking/Pepper_Poppers.png" alt="Pepper Poppers" loading="lazy" /></span></td>
-												<td>Pepper Poppers</td>
+												<td><div class="tooltip">Pepper Poppers<span class="tooltiptext">應該是指 Jalapeño popper，一種將墨西哥辣椒塞滿起司再裹上麵包粉之後油炸而成的料理</span></td></div>
 												<td>爆炒青椒</td>
 												<td>辣椒鑲起司</td>
 											</tr>
@@ -1160,7 +1189,7 @@
 											</tr>
 											<tr>
 												<td class="center"><span class="image small"><img src="images/sdv/cooking/Stuffing.png" alt="Stuffing" loading="lazy" /></span></td>
-												<td>Stuffing</td>
+												<td><div class="tooltip">Stuffing<span class="tooltiptext">Stuffing 是感恩節用來塞在火雞裡的「填料」或「配料」（dressing）</span></td></div>
 												<td>塞料麵包</td>
 												<td>填料</td>
 											</tr>
@@ -1197,27 +1226,27 @@
 										<tbody>
 											<tr>
 												<td class="center"><span class="image small"><img src="images/sdv/mineral/Alamite.png" alt="Alamite" loading="lazy" /></span></td>
-												<td>Alamite </td>
-												<td>透閃石 </td>
-												<td>水砷鋅礦 </td>
+												<td><div class="tooltip">Alamite<span class="tooltiptext">可能是 Adamite<br />Adam 就是聖經的亞當，同時也是姓氏。作者在做遊戲的時候有刻意避開一些現實的元素，可能就是因為這個原因才把 Adam 改成另一個少見的姓氏 Alam</span></td></div>
+												<td>透閃石</td>
+												<td>水砷鋅礦</td>
 											</tr>
 											<tr>
 												<td class="center"><span class="image small"><img src="images/sdv/mineral/Bixite.png" alt="Bixite" loading="lazy" /></span></td>
-												<td>Bixite </td>
-												<td>黑方石 </td>
-												<td>方鐵錳礦 </td>
+												<td><div class="tooltip">Bixite<span class="tooltiptext">可能是 Bixbyite<br />Bixby 是發現者的名字</span></td></div>
+												<td>黑方石</td>
+												<td>方鐵錳礦</td>
 											</tr>
 											<tr>
 												<td class="center"><span class="image small"><img src="images/sdv/mineral/Esperite.png" alt="Esperite" loading="lazy" /></span></td>
-												<td>Esperite </td>
-												<td>硅鈣石 </td>
-												<td>矽鈣鉛鋅礦 </td>
+												<td>Esperite</td>
+												<td>硅鈣石</td>
+												<td>矽鈣鉛鋅礦</td>
 											</tr>
 											<tr>
 												<td class="center"><span class="image small"><img src="images/sdv/mineral/Fire_Opal.png" alt="Fire Opal" loading="lazy" /></span></td>
-												<td>Fire Opal </td>
-												<td>赤紅貓眼石 </td>
-												<td>火蛋白石 </td>
+												<td>Fire Opal</td>
+												<td>赤紅貓眼石</td>
+												<td>火蛋白石</td>
 											</tr>
 											<tr>
 												<td class="center"><span class="image small"><img src="images/sdv/mineral/Geminite.png" alt="Geminite" loading="lazy" /></span></td>
@@ -1258,8 +1287,8 @@
 											<tr>
 												<td class="center"><span class="image small"><img src="images/sdv/mineral/Prismatic_Shard.png" alt="Prismatic Shard" loading="lazy" /></span></td>
 												<td>Prismatic Shard</td>
-												<td>五彩碎片 </td>
-												<td>彩虹碎片 </td>
+												<td>五彩碎片</td>
+												<td>彩虹碎片</td>
 											</tr>
 											<tr>
 												<td class="center"><span class="image small"><img src="images/sdv/mineral/Star_Shards.png" alt="Star Shards" loading="lazy" /></span></td>
@@ -1269,9 +1298,9 @@
 											</tr>
 											<tr>
 												<td class="center"><span class="image small"><img src="images/sdv/mineral/Topaz.png" alt="Topaz" loading="lazy" /></span></td>
-												<td>Topaz </td>
-												<td>黃水晶 </td>
-												<td>黃玉 </td>
+												<td><div class="tooltip">Topaz<span class="tooltiptext">黃水晶是 Citrine，和 Topaz 不同<br />Topaz 也常譯作「托帕石」，因為 Topaz 有非常多種顏色</span></td></div>
+												<td>黃水晶</td>
+												<td>黃玉</td>
 											</tr>
 										</tbody>
 									</table>
@@ -1294,7 +1323,7 @@
 											</tr>
 											<tr>
 												<td class="center"><span class="image small"><img src="images/sdv/item/Dressed_Spinner.png" alt="Dressed Spinner" loading="lazy" /></span></td>
-												<td>Dressed Spinner</td>
+												<td><div class="tooltip">Dressed Spinner<span class="tooltiptext">臺灣就叫做「旋轉亮片」</span></td></div>
 												<td>精裝旋式魚餌</td>
 												<td>精裝旋式亮片魚鉤</td>
 											</tr>
@@ -1306,7 +1335,7 @@
 											</tr>
 											<tr>
 												<td class="center"><span class="image small"><img src="images/sdv/item/Drum_Block.png" alt="Drum Block" loading="lazy" /></span></td>
-												<td>Drum Block</td>
+												<td><div class="tooltip">Drum Block<span class="tooltiptext">翻譯參考 Minecraft 的音階盒（Note Block）</span></td></div>
 												<td>鼓塊</td>
 												<td>鼓聲盒</td>
 											</tr>
@@ -1318,7 +1347,7 @@
 											</tr>
 											<tr>
 												<td class="center"><span class="image small"><img src="images/sdv/item/Fairy_Dust.png" alt="Fairy Dust" loading="lazy" /></span></td>
-												<td>Fairy Dust</td>
+												<td><div class="tooltip">Fairy Dust<span class="tooltiptext">fairy 常翻作「小仙子」，不過翻成「仙塵」感覺有點東方的味道，改用比較不精確的「精靈塵」</span></td></div>
 												<td>仙塵</td>
 												<td>精靈塵</td>
 											</tr>
@@ -1348,7 +1377,7 @@
 											</tr>
 											<tr>
 												<td class="center"><span class="image small"><img src="images/sdv/item/Gourmet_Tomato_Salt.png" alt="Gourmet Tomato Salt" loading="lazy" /></span></td>
-												<td>Gourmet Tomato Salt</td>
+												<td><div class="tooltip">Gourmet Tomato Salt<span class="tooltiptext">Gourmet 在這裡應該是形容詞</span></td></div>
 												<td>美食家番茄鹽</td>
 												<td>美味番茄鹽</td>
 											</tr>
@@ -1372,7 +1401,7 @@
 											</tr>
 											<tr>
 												<td class="center"><span class="image small"><img src="images/sdv/item/Lost_Book.png" alt="Lost Book" loading="lazy" /></span></td>
-												<td>Lost Book</td>
+												<td><div class="tooltip">Lost Book<span class="tooltiptext">「遺失之書」好像在說這是一本特別的書</span></td></div>
 												<td>遺失之書</td>
 												<td>遺失的書</td>
 											</tr>
@@ -1384,7 +1413,7 @@
 											</tr>
 											<tr>
 												<td class="center"><span class="image small"><img src="images/sdv/item/Monster_Musk.png" alt="Monster Musk" loading="lazy" /></span></td>
-												<td>Monster Musk</td>
+												<td><div class="tooltip">Monster Musk<span class="tooltiptext">怪獸與怪物意思略有不同，一般遊戲中習慣稱作怪物</span></td></div>
 												<td>怪獸香水</td>
 												<td>怪物香水</td>
 											</tr>
@@ -1523,7 +1552,7 @@
 											</tr>
 											<tr>
 												<td class="center"><span class="image medium"><img src="images/sdv/bigitem/Cursed_P.K._Arcade_System.png" alt="Cursed P.K. Arcade System" loading="lazy" /></span></td>
-												<td>Cursed P.K. Arcade System</td>
+												<td><div class="tooltip">Cursed P.K. Arcade System<span class="tooltiptext">P.K. 是草原之王（Prairie King）的縮寫</span></td></div>
 												<td>被詛咒的P.K.街機系統</td>
 												<td>被詛咒的草原之王遊戲機臺</td>
 											</tr>
@@ -1783,7 +1812,13 @@
 											</tr>
 											<tr>
 												<td class="center"><span class="image small"><img src="images/sdv/tool/Watering_Can.png" alt="Watering Can" loading="lazy" /></span></td>
-												<td>Watering Can</td>
+												<td>FishingRod</td>
+												<td>魚竿、釣竿</td>
+												<td>釣竿</td>
+											</tr>
+											<tr>
+												<td class="center"><span class="image small"><img src="images/sdv/tool/Watering_Can.png" alt="Watering Can" loading="lazy" /></span></td>
+												<td><div class="tooltip">Watering Can<span class="tooltiptext">臺灣的噴壺是指按壓式的那種真的用「噴」的壺</span></td></div>
 												<td>噴壺</td>
 												<td>澆水壺</td>
 											</tr>
@@ -1802,7 +1837,7 @@
 										<tbody>
 											<tr>
 												<td class="center"><span class="image small"><img src="images/sdv/weapon/Abby's_Planchette.png" alt="Abby's Planchette" loading="lazy" /></span></td>
-												<td>Abby's Planchette</td>
+												<td><div class="tooltip">Abby's Planchette<span class="tooltiptext">乩板（Planchette）是西方的占卜用具，通常與通靈板一同使用<br />只翻乩板可能不夠清楚，加上「通靈」</td></div>
 												<td>阿比蓋爾的占卜寫板</td>
 												<td>阿比蓋爾的通靈乩板</td>
 											</tr>
@@ -1965,7 +2000,7 @@
 											</tr>
 											<tr>
 												<td class="center"><span class="image small"><img src="images/sdv/hat/Hair_Bone.png" alt="Hair Bone" loading="lazy" /></span></td>
-												<td>Hair Bone</td>
+												<td><div class="tooltip">Hair Bone<span class="tooltiptext">bone 與 bow（蝴蝶結）諧音</span></td></div>
 												<td>骨髮夾</td>
 												<td>骨蝶結</td>
 											</tr>
@@ -2093,13 +2128,13 @@
 											</tr>
 											<tr>
 												<td class="center"><span class="image small"><img src="images/sdv/ring/Slime_Charmer_Ring.png" alt="Slime Charmer Ring" loading="lazy" /></span></td>
-												<td>Slime Charmer Ring</td>
+												<td><div class="tooltip">Slime Charmer Ring<span class="tooltiptext">效果是免疫史萊姆的攻擊，翻作「剋星」可能會使人誤會</span></td></div>
 												<td>史萊姆剋星戒指</td>
 												<td>蠱惑史萊姆戒指</td>
 											</tr>
 											<tr>
 												<td class="center"><span class="image small"><img src="images/sdv/ring/Sturdy_Ring.png" alt="Sturdy Ring" loading="lazy" /></span></td>
-												<td>Sturdy Ring</td>
+												<td><div class="tooltip">Sturdy Ring<span class="tooltiptext">效果是負面狀態時間減半，所以改成精神層面的「堅定」</span></td></div>
 												<td>結實戒指</td>
 												<td>堅定戒指</td>
 											</tr>
@@ -2148,7 +2183,7 @@
 											</tr>
 											<tr>
 												<td class="center"><span class="image medium"><img src="images/sdv/monster/False_Magma_Cap.png" alt="False Magma Cap" loading="lazy" /></span></td>
-												<td>False Magma Cap</td>
+												<td><div class="tooltip">False Magma Cap<span class="tooltiptext">岩漿和熔岩不同<br />簡單來說，噴出來的是熔岩（lava），還沒噴出來的是岩漿（magma）</span></td></div>
 												<td>假熔岩菇</td>
 												<td>假岩漿菇</td>
 											</tr>
@@ -2190,7 +2225,7 @@
 											</tr>
 											<tr>
 												<td class="center"><span class="image medium"><img src="images/sdv/monster/Tiger_Slime.png" alt="Tiger Slime" loading="lazy" /></span></td>
-												<td>Tiger Slime</td>
+												<td><div class="tooltip">Tiger Slime<span class="tooltiptext">也有翻作「條紋史萊姆」<br />老虎史萊姆太直接；條紋史萊姆意思不太對，那就合在一起吧</span></td></div>
 												<td>老虎史萊姆</td>
 												<td>虎紋史萊姆</td>
 											</tr>
@@ -2383,7 +2418,7 @@
 												<td>乾草機器</td>
 											</tr>	
 											<tr>
-												<td>Master</td>
+												<td><div class="tooltip">Master<span class="tooltiptext">Master 常常翻作「精通」，不過 Master 也可以指船長，而這個附魔跟釣魚相關，顯然不該翻作精通</span></td></div>
 												<td>精通</td>
 												<td>船長</td>
 											</tr>
@@ -2442,14 +2477,39 @@
 												<td>野炊爐</td>
 											</tr>
 											<tr>
-												<td>Community Center</td>
+												<td><div class="tooltip">Community Center<span class="tooltiptext">臺灣習慣上會稱為「社區活動中心」，簡稱「活動中心」，「社區中心」較少用</span></td></div>
 												<td>社區中心</td>	
 												<td>活動中心</td>
+											</tr>
+											<tr>
+												<td>Dark Talisman</td>
+												<td>黑暗護身符、暗黑護身符</td>
+												<td>暗黑護符</td>
+											</tr>
+											<tr>
+												<td><div class="tooltip">Gridball<span class="tooltiptext">從遊戲畫面來看顯然是美式足球<br />不過美式足球的簡稱 football 在其他地區會有歧異，因此作者將 gridiron football（美式足球其中一種稱呼）組合成 gridball</span></div></td>
+												<td>格球</td>
+												<td>橄球</td>
+											</tr>
+											<tr>
+												<td>Miss Penny</td>
+												<td>潘妮小姐</td>
+												<td>佩妮老師</td>
+											</tr>
+											<tr>
+												<td>Shrine</td>
+												<td>神殿、神廟、神社</td>
+												<td>神龕</td>
 											</tr>
 											<tr>
 												<td>Special Move</td>
 												<td>特殊動作</td>	
 												<td>特殊技能</td>
+											</tr>
+											<tr>
+												<td>Zuzu City</td>
+												<td>祖祖市、祖祖城</td>
+												<td>祖祖城</td>
 											</tr>
 										</tbody>
 									</table>
@@ -2506,12 +2566,17 @@
 						<!-- Donate -->
 							<article id="donate">
 								<h2 class="major">支持我們</h2>
-								<p>如果你喜歡我們的模組，可以斗內請我們喝杯咖啡_(:3 」∠ )_<span class="chide">或是送我一台 PS5</span></p>
-								<ul class="actions">
-									<li><a href="https://p.ecpay.com.tw/1C11A93" class="button" target="_blank">Ecpay</a></li>
-									<li><a href="#QRCode" class="button">街口支付</a></li>
-									<!-- <li><a href="#" class="button icon brands fa-paypal">PayPal</a></li> -->
-								</ul>
+								<p>如果您喜歡我們的模組，可以斗內請我們喝杯咖啡_(:3 」∠ )_<br />模組目前依然有不少地方有待改進，全文校對的路很漫長，斗內可以讓我們更有動力完成喔(๑•̀ㅂ•́)و✧</p>
+									<ul class="actions">
+										<li><a href="https://p.ecpay.com.tw/1C11A93" class="button" target="_blank">Ecpay</a></li>
+										<li><a href="#QRCode" class="button">街口支付</a></li>
+										<!-- <li><a href="#" class="button icon brands fa-paypal">PayPal</a></li> -->
+									</ul>
+									<h4 style="text-align: center;">校對進度</h4>
+									<!-- progress -->
+									<div class="progress">
+										<div class="progress-value"></div>
+									  </div>
 							</article>
 
 						<!-- QRCode -->
@@ -2524,8 +2589,12 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<p class="copyright">Stardew Valley CHT Mod</p>
+						<!-- progress -->
+						<div class="progress" style="width: 50%;">
+							<div class="progress-value"></div>
+						  </div>
 					</footer>
-
+					
 			</div>
 
 		<!-- BG -->
@@ -2555,7 +2624,7 @@
 		<!-- 隨著時間切換背景圖片 -->
 			<script type="text/javascript">
 				var currentTime = new Date().getHours();
-				if (6 <= currentTime && currentTime < 19) {
+				if (6 <= currentTime && currentTime < 19) { // 設定時間
 				  if (document.body) {
 					document.getElementById("bg").setAttribute("class","bg");
 					document.getElementById("logo").setAttribute("class","icon solid fa-leaf");
@@ -2624,8 +2693,30 @@
 						setTimeout(function() {x.innerHTML = "複製網址";}, 3000);
 				  });
 				});
-			</script> 
-			
+			</script>
+
+		<!-- 不想寫把下載網址寫在兩個位置 -->
+			<script>
+				$(document).ready(function(){
+					$("a[href='#downloadlink']").attr({href:"https://dl.orangedox.com/pMtOAi", target:"_blank"});
+				});
+			</script>
+
+		<!-- 詳細列表 -->
+			<script>
+				// 載入時隱藏
+				window.onload = function() {
+					$(".spoiler").hide();
+				};
+
+				// 按下按鈕後顯示
+				$(document).ready(function(){
+			  		$(".button").click(function(){
+							$(this).next(".spoiler").toggle(500);
+			  		});
+				});
+			</script>
+
 		<!-- 讀取動畫 -->
 			<script>
 				window.addEventListener("load", function () {

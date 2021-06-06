@@ -1,6 +1,74 @@
 @import url(fontawesome-all.min.css);
 /* 我加的設定 */
 
+	/* progress bar */
+	.progress {
+		background: rgba(255,255,255,0.1);
+		justify-content: flex-start;
+		border-radius: 100px;
+		align-items: center;
+		position: relative;
+		padding: 0 5px;
+		display: flex;
+		height: 0.5rem;
+		width: 100%;
+		margin:0px auto;
+	}
+	
+	.progress-value {
+		animation: load 3s normal forwards;
+		box-shadow: 0 0 10px 0 #fff;
+		border-radius: 100px;
+		background: #fff;
+		height: 0.3rem;
+		width: 0;
+	}
+	
+	@keyframes load {
+		0% { width: 0; }
+		100% { width: 5%; }
+	}
+
+	/* 詳細列表 */
+	.spoiler {
+		background-color: rgba(0, 0, 0, 0.3);
+		font-size: 80%;
+		padding: 1rem 2rem;
+		margin-top: 0.5rem;
+		border-radius: 4px;
+	}
+
+	/* 註解 */
+	.tooltip {
+		position: relative;
+		text-decoration: underline dotted rgba(255, 255, 255, 0.6);
+	  }
+
+	.tooltip .tooltiptext {
+		visibility: hidden;
+		width: auto;
+		max-width: 20em;
+		background-color: rgba(0, 0, 0, 0.7);
+		text-align: left;
+		font-size: 80%;
+		border-radius: 4px;
+		padding: 0.4em;
+		opacity: 0;
+	
+		/* Position the tooltip */
+		position: absolute;
+		top: 100%;
+		left: 30%;
+		margin-left: -5em;
+		z-index: 1;
+	}
+	
+	.tooltip:hover .tooltiptext {
+		visibility: visible;
+		opacity: 1;
+		transition: 0.2s;
+	}
+	
 	/* 改變反白的顏色 */
 		::selection {
 			color: #f5de13;
@@ -11,10 +79,14 @@
 			text-decoration: line-through;
 			opacity: 0;
 		}
-		.chide:hover{
+		.hide{
+			opacity: 0;
+		}
+		.chide:hover, .hide:hover{
 			opacity: 1;
 		}
-		
+
+
 	/* 滑鼠移過顯示不同張圖 */
 		.diff .img-after {
 			position: absolute;
@@ -125,14 +197,6 @@
 		from {opacity: .4}
 		to {opacity: 1}
 		}
-		
-	/* 隱藏 */
-	.hide{
-		opacity: 0;
-	}
-	.hide:hover{
-		opacity: 1;
-	}
 
 	/* 置中 */
 		.center {
@@ -447,6 +511,10 @@ input, select, textarea {
 		border: 0;
 		border-bottom: solid 1px #ffffff;
 		margin: 2.75rem 0;
+	}
+
+	ul hr {
+		margin: 0.5rem 0;
 	}
 
 	.align-left {
