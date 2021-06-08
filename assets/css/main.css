@@ -58,8 +58,8 @@
 		/* Position the tooltip */
 		position: absolute;
 		top: 100%;
-		left: 30%;
-		margin-left: -5em;
+		left: 0%;
+		margin-right: -8em;
 		z-index: 1;
 	}
 	
